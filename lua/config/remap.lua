@@ -37,3 +37,7 @@ vim.keymap.set('n', '<leader>br', ":exe ':silent !open -a /Applications/Google\\
 -- Force Tab to do native indentation/spaces directly in Neovim, wiping out plugin listeners
 vim.keymap.set('i', '<Tab>', '<Tab>', { noremap = true, silent = true, desc = "Native Tab Indent" })
 vim.keymap.set('i', '<S-Tab>', '<S-Tab>', { noremap = true, silent = true, desc = "Native Shift-Tab" })
+
+vim.keymap.set("n", "<leader>]", ':bn<CR>', { desc = "Next buffer" })
+vim.keymap.set("n", "<leader>[", ':bp<CR>', { desc = "Previous buffer" })
+vim.keymap.set("n", "<leader>x", ':bd<CR>', { desc = "Delete buffer" })
