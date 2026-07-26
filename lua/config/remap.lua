@@ -42,4 +42,3 @@ vim.keymap.set("n", "<leader>]", ':bn<CR>', { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>[", ':bp<CR>', { desc = "Previous buffer" })
 vim.keymap.set("n", "<leader>x", ':bd<CR>', { desc = "Delete buffer" })
 
-vim.keymap.set("n", "<leader>t", function() Snacks.explorer() end)

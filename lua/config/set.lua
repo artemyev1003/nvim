@@ -10,7 +10,7 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = true
 
-vim.opt.autochdir = true
+-- vim.opt.autochdir = true
 
 -- File handling
 vim.opt.swapfile = false
@@ -39,6 +39,11 @@ vim.opt.clipboard:append("unnamedplus")
 
 vim.g.python3_host_prog = '~/.pyenv/versions/neovim/bin/python'
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- optionally enable 24-bit colour
+vim.opt.termguicolors = true
 
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
