@@ -92,7 +92,7 @@ vim.lsp.config('jdtls', {
         runtimes = {
           {
             name = "JavaSE-25",
-            path = "/Users/egor/Library/Java/JavaVirtualMachines/openjdk-25.0.1/Contents/Home",
+            path = "/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home",
             default = true,
           }
         }

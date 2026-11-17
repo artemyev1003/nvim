@@ -7,11 +7,9 @@ return {
             transparent = true, -- Enable transparent background
             dim = true,         -- Dim inactive windows with a black background
         },
-    },
-    {
-        "LazyVim/LazyVim",
-        opts = {
-            colorscheme = "neodarcula",
-        },
+        config = function(_, opts)
+            require("neodarcula").setup(opts)
+            vim.cmd.colorscheme("neodarcula")
+        end,
     },
 }
